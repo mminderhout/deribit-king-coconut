@@ -7,11 +7,12 @@ import pandas as pd
 from main import INSTRUMENTS
 
 
-def get_data(start, test=False):
+def get_data(start, end = None, test=False):
     url = "https://www.deribit.com/api/v2/public/get_tradingview_chart_data"
     if test:
-        url = "https://www.test.deribit.com/api/v2/public/get_tradingview_chart_data"
-    end = time.time()
+        url = "https://test.deribit.com/api/v2/public/get_tradingview_chart_data"
+    if end is None:
+        end = time.time()
 
     dataframes = []
     for instrument in INSTRUMENTS:
@@ -36,4 +37,5 @@ def get_data(start, test=False):
         else:
             merged_data = pd.merge(merged_data, df, on='timestamp', how='outer')
 
+    merged_data = merged_data.set_index('timestamp')
     return merged_data

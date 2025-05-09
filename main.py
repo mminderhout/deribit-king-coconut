@@ -4,8 +4,8 @@ from datetime import datetime
 import search
 
 COST = {
-    'ETH': 0.0013371,
     'BTC': 0.00005181,
+    'ETH': 0.0013371,
     'PAX': 0.0015856,
     'SOL': 0.020196,
     'XRP': 7.2942,
