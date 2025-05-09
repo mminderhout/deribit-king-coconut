@@ -1,6 +1,8 @@
 import requests
 from datetime import datetime
 
+import search
+
 COST = {
     'ETH': 0.0013371,
     'BTC': 0.00005181,
@@ -27,10 +29,12 @@ def find_start_date():
         response = requests.get(url, params=params)
         creation_timestamps.append(response.json()['result']['creation_timestamp'])
     print(f'The earliest all products were available is {datetime.fromtimestamp(max(creation_timestamps) / 1000).strftime('%Y-%m-%d %H:%M:%S')}.')
-    return max(creation_timestamps)
+    return max(creation_timestamps) / 1000
+
 
 def main():
     date_start = find_start_date()
+    search.start(date_start)
 
 
 if __name__ == "__main__":
