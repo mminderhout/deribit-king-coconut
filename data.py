@@ -1,13 +1,12 @@
 import time
-
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 import pandas as pd
 
 from main import INSTRUMENTS
 
 
-def get_data(start, end = None, test=False):
+def get_data(start, end, test=False):
     url = "https://www.deribit.com/api/v2/public/get_tradingview_chart_data"
     if test:
         url = "https://test.deribit.com/api/v2/public/get_tradingview_chart_data"
@@ -20,7 +19,7 @@ def get_data(start, end = None, test=False):
             "instrument_name": instrument,
             "start_timestamp": int(start)*1000,
             "end_timestamp": int(end)*1000,
-            "resolution": 60
+            "resolution": '1D'
         }
         response = requests.get(url, params=params)
         result = response.json()["result"]
@@ -28,7 +27,8 @@ def get_data(start, end = None, test=False):
             "timestamp": [datetime.fromtimestamp(t / 1000) for t in result["ticks"]],
             instrument: result["close"],
         })
-        dataframes.append(df[df['timestamp'].dt.hour==8])
+        dataframes.append(df)
+
 
     merged_data = None
     for i, df in enumerate(dataframes):
