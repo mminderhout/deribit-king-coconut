@@ -28,9 +28,7 @@ def find_start_date():
         params = {"instrument_name": instrument}
         response = requests.get(url, params=params)
         creation_timestamps.append(response.json()['result']['creation_timestamp'])
-    # print(f'The earliest all products were available is {datetime.fromtimestamp(max(creation_timestamps) / 1000).strftime('%Y-%m-%d %H:%M:%S')}.')
     second_highest = sorted(set(creation_timestamps), reverse=True)[1]
-    # print(f'The earliest at most 1 product was missing is {datetime.fromtimestamp(second_highest / 1000).strftime('%Y-%m-%d %H:%M:%S')}.')
     return second_highest / 1000
 
 

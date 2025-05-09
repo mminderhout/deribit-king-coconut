@@ -32,7 +32,7 @@ def get_data(start, end, test=False):
     merged_data = None
     for i, df in enumerate(dataframes):
         if merged_data is None:
-            merged_data = df.copy()  # Initialize with the first df
+            merged_data = df.copy()
         else:
             merged_data = pd.merge(merged_data, df, on='timestamp', how='outer')
 

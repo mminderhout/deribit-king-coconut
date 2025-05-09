@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="912c986c-3920-418c-992f-cb1d14742b8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deribit_king_coconut.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="912c986c-3920-418c-992f-cb1d14742b8c" name="Changes" comment="spacing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mminderhout"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mminderhout/deribit-king-coconut",
+    "accountId": "cba9ef0f-4f95-4990-88e5-d47f17534627"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -40,6 +43,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.data.executor": "Debug",
+    "Python.main.executor": "Run",
+    "Python.search.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -61,6 +67,63 @@
       <option name="presentableId" value="Default" />
       <updated>1746774931512</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1746776491884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746776491884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="find first date all products were trading on deribit">
+      <option name="closed" value="true" />
+      <created>1746780221819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746780221819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="set-up data collection, start search">
+      <option name="closed" value="true" />
+      <created>1746785485075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746785485075</updated>
+    </task>
+    <task id="LOCAL-00004" summary="try find 2-decimal match in initial search region for prod and test">
+      <option name="closed" value="true" />
+      <created>1746792250196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746792250196</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finish basic search and clean up code">
+      <option name="closed" value="true" />
+      <created>1746802151446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746802151446</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add $">
+      <option name="closed" value="true" />
+      <created>1746803877006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746803877006</updated>
+    </task>
+    <task id="LOCAL-00007" summary="spacing">
+      <option name="closed" value="true" />
+      <created>1746805148036</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746805148036</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,5 +136,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="find first date all products were trading on deribit" />
+    <MESSAGE value="set-up data collection, start search" />
+    <MESSAGE value="try find 2-decimal match in initial search region for prod and test" />
+    <MESSAGE value="finish basic search and clean up code" />
+    <MESSAGE value="add $" />
+    <MESSAGE value="spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="spacing" />
   </component>
 </project>
