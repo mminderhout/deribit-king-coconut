@@ -29,7 +29,6 @@ def get_data(start, end, test=False):
         })
         dataframes.append(df)
 
-
     merged_data = None
     for i, df in enumerate(dataframes):
         if merged_data is None:

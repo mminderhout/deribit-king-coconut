@@ -2,6 +2,7 @@ import requests
 
 import search
 
+
 COST = {
     'BTC': 0.00005181,
     'ETH': 0.0013371,
