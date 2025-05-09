@@ -2,6 +2,7 @@
 ```shell
 python main.py 
 ```
+- python version is 3.12
 ## Output
 Textual output indicating on what day and at what usd price the sale of the king coconut mostl likely occurred. Additionally, the sum of squared deviations from the mean usd price is given as a measure of price equality across the crypto payment options, and the number of currencies for which there is no data at that timestamp is also given. The usd price is rounded to 2 decimals, and if it is not equal across all cryptos, the median is reported as the sale price. 
 
