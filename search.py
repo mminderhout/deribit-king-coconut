@@ -21,7 +21,7 @@ def start(date_start, date_end):
         time = price.index[0].strftime('%Y-%m-%d %H:%M:%S')
         ssd = best_matches[env]['ssd'].iloc[0]
         missing = best_matches[env][INSTRUMENTS].isna().sum(axis=1).iloc[0]
-        print(f'The best match occurs on {time}, at a price of {price.iloc[0]} in the {env} environment.\n'
+        print(f'The best match occurs on {time}, at a price of ${price.iloc[0]} in the {env} environment.\n'
               f'The sum of squared differences from the mean price at this time is {round(ssd, 6)}, and there are '
               f'{missing} missing products.')
 
